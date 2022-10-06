@@ -1,1 +1,0 @@
-# basicreactprojects_hacktoberfest
