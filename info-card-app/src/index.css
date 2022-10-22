@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  background-color: #23252C;
+  color: white;
+}
+
+.App {
+  background-color: #1A1B21;
+  max-width: 317px;
+  height: 780px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* Header */
+
+.header {
+  text-align: center;
+  line-height: 10px;
+}
+
+.header h1 {
+  font-size: 25px;
+}
+
+.header h3 {
+  color: #F3BF99;
+  font-size: 12px;
+}
+
+.header h4 {
+  color: #F5F5F5;
+  font-size: 10px;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  margin-inline: 10px;
+  width: 115px;
+  height: 34px;
+}
+
+.btn-linkedin, .btn-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  border-radius: 6px;
+}
+
+.btn-mail small, .btn-linkedin small {
+  margin-left: 8px;
+  font-size: 13px;
+}
+
+.btn-linkedin {
+  background-color: #5093E2;
+  color: white;
+}
+
+/* main */
+
+.main-content {
+  margin: 0 auto;
+  height: 399px; 
+}
+
+.about, .interests{
+  margin: 25px 33px;
+}
+
+.about h2, .interests h2 {
+  font-size: 16px;
+}
+
+.about p, .interests p {
+  font-size: 10px;
+  line-height: 190%;
+}
+
+/* Footer */
+
+.footer-section {
+  background-color: #161619;
+  border-radius: 0px 0px 10px 10px;
+  height: 64px;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section img {
+  padding-right: 24px;
+}
