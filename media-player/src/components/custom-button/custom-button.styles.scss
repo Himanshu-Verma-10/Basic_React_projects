@@ -1,0 +1,23 @@
+.custom-button {
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: transform 0.2s ease;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 20px;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+  &:active {
+    outline: none;
+    transform: translateY(0);
+  }
+}

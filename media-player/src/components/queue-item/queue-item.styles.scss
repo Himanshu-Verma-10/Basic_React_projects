@@ -1,0 +1,55 @@
+.queue-item {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  position: relative;
+  color: #0d0c12;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  &:hover {
+    background-color: #0d0c120e;
+  }
+
+  &:hover .remove-button {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  img {
+    width: 55px;
+    height: 55px;
+  }
+  .info {
+    width: 100%;
+    padding: 0 10px;
+    span {
+      display: block;
+    }
+    .title {
+      font-size: 14px;
+      padding: 0;
+    }
+    .subtitle {
+      font-size: 12px;
+    }
+  }
+
+  .remove-button {
+    cursor: pointer;
+    margin-left: auto;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.06);
+    }
+  }
+}
