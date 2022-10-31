@@ -1,0 +1,113 @@
+.dialog {
+  width: 90%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  color: #2d3347;
+
+  .title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      width: 50%;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  .subtitle {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(243, 243, 243);
+  }
+
+  .tracks-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    .text-input {
+      border: 2px solid transparent;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      background-color: rgb(243, 243, 243);
+      // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      outline: none;
+      transition: border-color 0.2s ease;
+
+      &:focus {
+        border-color: #2d3347;
+      }
+    }
+
+    .error {
+      color: rgb(255, 51, 0);
+      margin-right: 10px;
+    }
+
+    .btn {
+      cursor: pointer;
+      outline: none;
+      font-size: 13px;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50px;
+      margin-left: 20px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: #2d3347;
+      color: #fff;
+    }
+    .btn-secondary {
+      background-color: #fff;
+      border: 1px solid #2d3347;
+
+      &:hover {
+        color: #fff;
+        background-color: #2d3347;
+      }
+    }
+
+    .btn-disabled {
+      background-color: #d8d5eb;
+
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  label {
+    cursor: pointer;
+    font-size: 14px ;
+    padding-left: 5px;
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 1.2rem;
+    margin-bottom: 1px;
+  }
+
+}

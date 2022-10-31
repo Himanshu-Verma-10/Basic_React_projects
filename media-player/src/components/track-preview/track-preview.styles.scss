@@ -1,0 +1,42 @@
+.track-preview-container {
+  width: 23%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 0 10px 30px 10px;
+  border-radius: 10px;
+  // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: #2d3347;
+
+  .image-container {
+    width: 70px;
+    height: 70px;
+    .image {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: filter 0.15s ease;
+    }
+
+    svg {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .details {
+    margin-left: 10px;
+    .track-name {
+      margin: 0;
+    }
+    .singer-name {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

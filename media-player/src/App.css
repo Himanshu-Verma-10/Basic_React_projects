@@ -1,0 +1,42 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2222;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  border-radius: 10px;
+}
+
+.content-enter {
+  opacity: 0.01;
+}
+
+.content-enter.content-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.content-exit {
+  opacity: 1;
+}
+
+.content-exit.content-exit-active {
+  opacity: 0.01;
+  transition: opacity 200ms ease-in;
+}
